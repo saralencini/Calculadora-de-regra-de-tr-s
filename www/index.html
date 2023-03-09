@@ -4,14 +4,92 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+    <link rel="stylesheet" href="css/style.css">
+
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-    </script>
+
+    <title> Calculadora </title>
+
+    
+    <style type="text/css">
+        .cinza{
+            background-color: #2b80ff;
+        }
+        .texto01 {font-family: French Script MT; 
+                color: rgb(0, 26, 255);  
+                font-size: 60px} 
+       .texto02 {font-family: French Script MT; 
+                color: #ffff;  
+                font-size: 30px} 
+        .texto03 {font-family: Arial; 
+                color: #ffff;  
+                font-size: 50px} 
+        .texto04 {font-family: Berlin Sans FB Demi; 
+                color: rgb(255, 5, 5);  
+                font-size: 36px} 
+        .texto05 {font-family: Arial; 
+                color: #ffff;  
+                font-size: 20px} 
+        .texto06 {font-family: Arial; 
+                color: #12007a;  
+                font-size: 20px} 
+                 
+                
+</style>
+   
+<link rel="shortcut icon" href="./src/imagens/SinalDeMais.png" type="image/x-icon">
+
 </head>
-<body>
-	<br />
-    This is a template for Monaca app.
+<body style background="./src/imagens/ImagemDeFundo.jpeg"> 
+	
+    <center> 
+    <span class="texto04"> Calculadora de regra de três </span> 
+    </center>
+
+    <center> 
+        <span class="texto05"> . </span>   
+    </center>
+
+<center> 
+    <span class="texto06"> Calcule!</span>
+</center>  
+
+    <span class="texto02"> . </span>  
+
+    <div class="calculator">
+
+        <div class="display" id="display">
+
+        <div class="calculator-buttons">
+<input type="number" id="1Valor" placeholder="1° Valor"> 
+<input type="number" id="2Valor" placeholder="2° Valor"> 
+<input type="number" id="3Valor" placeholder="3° Valor"> 
+
+
+<input type="button" id="btnCalcular" value="Calcular" ondblclick="calcularregrade3()"> 
+
+<input type="number" id="resultadoo" placeholder="Resultado"> 
+
+</div>
+</div>
+</div>
+<span class="texto02"> . </span>  
+
+<center> 
+<span class="texto01"> Expressão atual / Resultado </span>  
+ <h1 id="expressaoatual">  </h1> 
+</center>
+
+ <span class="texto03"> . </span>  
+
+ <center> 
+ <span class="texto01"> Histórico: </span>  
+<h1 id="historico01">  </h1> <h1 id="historico02"> </h1>  <h1 id="historico03">  </h1> <h1 id="historico04"> </h1> <h1 id="historico05"> </h1> 
+</center>
+
+<script src="./main.js"></script>
+
 </body>
 </html>
